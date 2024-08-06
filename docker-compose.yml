@@ -1,0 +1,8 @@
+services:
+  api:
+    image: dotnethexrestapi:latest
+    build:
+      context: .
+      dockerfile: docker/Api/Dockerfile
+    ports:
+      - "8080:80"
